@@ -1,0 +1,446 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*___________________________________________________TOPHEADER___________________________________________________*/
+.topheader {
+    background-color:#FF0000;
+    width: 100%;     /* Asegura que ocupe todo el ancho */
+    height: 100px;   /* Altura del header */
+    position: fixed; /* Mantiene el header fijo en la parte superior */
+    top: 0; /* Posiciona el header en la parte superior */
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.topheader-container {
+    margin-left: 6.5%;
+    margin-right: 6.5%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.menu-horizontal {
+    list-style: none;
+    width: 100%;
+    font-size: 18px;
+    justify-content: end;
+    display: flex;
+}
+
+.menu-horizontal li a {
+    display: block;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Lexend", sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.menu-vertical {
+    position: absolute;
+    background-color: #cacaca;
+    box-shadow: 0 10px 10px #00000080;
+    border: none;
+    border-radius: 10px;
+    padding: 0px;
+    margin-top: 0px;
+    list-style: none;
+    display: none;
+}
+
+.menu-horizontal .menu-vertical {
+    margin-left: 20px;
+}
+
+.menu-horizontal .menu-vertical li a {
+    font-family: "Lexend", sans-serif;
+    font-size: 22px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+.menu-vertical li a:hover {
+    background-color: #0033A0;
+    color:#ffffff;
+}
+
+.Btn-IniciarSesion{
+    margin-left: 20px;
+    justify-content: end;
+}
+
+.Btn-IconoMensaje {
+    background-color: #0033A0;
+    height: 54px;
+    width: 255px;
+    border: none;
+    border-radius: 75.5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.Btn-IconoMensaje span{
+    font-family: "Lexend", sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+.Btn-IconoMensaje i{
+    font-family: "Font Awesome 5 Free";
+    font-size: 30px;
+    font-weight: 2;
+    color: #ffffff;
+    color:none;
+    font-style: none;
+}
+
+.Btn-IniciarSesion  li a {
+    display: block;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: "Lexend", sans-serif;
+    font-size: 22px;
+    color: #000000;
+    padding-right: 95px;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+
+.Btn-IniciarSesion:hover .menu-vertical {
+    display: block;
+}
+
+.topheader-container img {
+    cursor: pointer;
+}
+
+.buscador {
+    padding-left: 60px;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+
+.buscador input[type="text"] {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 14px 0px 0px 14px;
+    height: 54px;
+    width: 200px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #8C8C8C;
+    padding: 0px 10px;
+}
+
+.buscador input::placeholder {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #8c8c8c;
+}
+
+.Ico-lupa {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0px 14px 14px 0px;
+    height: 54px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.Ico-lupa i {
+    font-family: "Font Awesome 5 Free";
+    font-size: 28px;
+    color: #8c8c8c;
+}
+
+/*______________________________________________________________DENUNCIAS______________________________________________________________*/
+.Reportes {
+    align-items: center;
+    padding: 140px 6.5% 40px 6.5%;
+}
+
+/* Título */
+.text h1 {
+    font-family: "Lexend" , sans-serif;
+    font-size: 40px;
+    color: #000000;
+}
+
+/* Párrafo */
+.text p {
+    font-family: sans-serif;
+    text-align: justify;
+    line-height: 30px;
+    font-size: 22px;
+}
+
+/*_____________________________________________FORMULARIO_____________________________________________*/
+
+/*espaciado de la seccion formulario del resto del documento*/
+.Formulario-OjoCiudadano {
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+
+.Formulario-OjoCiudadano{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Formulario {
+    padding-top: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px #00000080;
+    width: 890px;
+    height: 561px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+form legend {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Lexend", sans-serif;
+    text-align: center;
+    margin-bottom: 5px;
+    padding-top: 5px;
+}
+
+form fieldset {
+    border: none;
+}
+
+/*Espaciado entre cuadrados del mismo formulario*/
+.Espacio-Formulario {
+    padding-bottom:16px;
+    cursor: pointer;
+}
+
+form input::placeholder {
+    font-size: 15px;
+    color:#8C8C8C;
+    font-family: sans-serif;
+}
+
+.Items-Formulario {
+    display:flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+
+.Apellidos {
+    display:flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+
+form .Apellidos input[name="fapepat"] {
+    width: 188.75px;
+}
+
+form .Apellidos input[name="fapemat"] {
+    width: 188.75px;
+    margin-left: 15px;
+}
+
+form input[type=text], [type=tel], [type=email] {
+    font-size: 15px;
+    color: #8C8C8C;
+    font-family: sans-serif;
+    padding-left: 12px; /*Cuanto espacio colocar entre el borde izquierdo y el contenido del selector*/
+    background-color: #D9D9D9;
+    width: 406.15px;
+    height: 39.86px;
+    border: none;
+}
+
+textarea::placeholder {
+    font-size: 15px;
+    color:#8C8C8C;
+    font-family: sans-serif;
+}
+
+/*Ajustar el botoncito de checkbox*/
+.Formulario-Checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*Ajustar el tecto al lado del checkbox*/
+.Formulario-Checkbox label {
+    margin-left: 5px;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #000000;
+}
+
+form textarea[name="fmessage"] {
+    font-size: 15px;
+    color: #8C8C8C;
+    font-family: sans-serif;
+    padding-left: 12px;
+    background-color: #D9D9D9;
+    width: 406.15px;
+    height: 261px;
+    border: none;
+    padding-top:14px;
+    margin-left: 15px;
+}
+
+form input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #D9D9D9;
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline:none;
+}
+
+form input[type="checkbox"]:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content:"\f00c";
+    font-size: 15px;
+    color: #FFFFFF;
+    display:none;
+}
+
+form input[type="checkbox"]:checked {
+    background-color: #0033A0;
+}
+
+form input[type="checkbox"]:checked:after {
+    display: block;
+}
+
+form input[type="submit"] {
+    background-color: #0033A0;
+    border: none;
+    width: 855px;
+    height: 39.86px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Lexend", sans-serif;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    color: #0033A0;
+    border: 2px solid #0033A0;
+    background-color: #FFFFFF;
+}
+
+form input[type="file"] {
+    display: none;
+}
+
+.Espacio-Formulario label {
+    font-size: 15px;
+    color: #8C8C8C;
+    font-family: sans-serif;
+    padding-left: 12px; /*Cuanto espacio colocar entre el borde izquierdo y el contenido del selector*/
+    padding-top: 15px;
+    background-color: #D9D9D9;
+    width: 844px;
+    height: 80px;
+    border: none;
+    display: block;
+    cursor: pointer;
+}
+/*______________________________________________________________PIE DE PAGINA______________________________________________________________*/
+.piepagina{
+    background: url("../images/Imagen-Fondo.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+.Contenedor-piepagina{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Opciones{
+    margin-top: 10px;
+    margin-left: 6.5%;
+    margin-bottom: 40px;
+}
+
+.RedesSociales{
+    margin-top: 20px;
+    margin-right: 6.5%;
+    margin-bottom: 40px;
+}
+
+.Opciones a {
+    text-decoration: none;
+}
+
+.Opciones h1 {
+    font-family: "Lexend", sans-serif;
+    letter-spacing: -1px;
+    font-size: 30px;
+    color: #000000;
+}
+
+.Opciones p {
+    font-family: sans-serif;
+    font-size:15px;
+    color: #000000;
+    margin-bottom: -5px;
+    cursor: pointer;
+}
+
+.Opciones p:hover{
+    text-decoration: underline;
+    color:#FF0000;
+}
+
+.RedesSociales p{
+    font-family: "Lexend", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.Icons-RedesSociales img {
+    padding-right: 5px;
+}
+
+.IconX {
+    margin: 0px -10px 0px -10px;
+}
+
+.RedesSociales img:hover{
+    cursor: pointer;
+}
