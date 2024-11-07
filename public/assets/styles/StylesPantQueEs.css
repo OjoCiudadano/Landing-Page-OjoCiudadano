@@ -172,3 +172,37 @@ body {
     font-size: 28px;
     color: #8c8c8c;
 }
+
+/*______________________________________________________________¿Que es OjoCiudadano?______________________________________________________________*/
+/* Contenido en fila */
+.GobiernosRegionales {
+    align-items: center;
+    padding: 140px 6.5% 80px 6.5%;
+}
+
+/* Título */
+.GobReg-container h1 {
+    font-family: "Lexend", sans-serif;
+    font-size: 40px;
+    color: #333;
+}
+/* Párrafo */
+.GobReg-container p {
+    font-family: sans-serif;
+    text-align: justify;
+    line-height: 30px;
+    font-size: 22px;
+}
+
+/* Imagen */
+.GobiernosRegionales img {
+    object-fit: cover;
+    background-position: center;
+    background-size:cover;
+    height: 450px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+}
