@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>OjoCiudadano-PantallaReporte-PortalTech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jaldi:wght@400;700&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link rel="icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="assets/styles/stylesPantReporte.css" />
+</head>
+<body>
+    <!--___________________________________________________TOPHEADER___________________________________________________-->
+    <nav class="topheader">
+        <div class="topheader-container">
+            <a href="index.html"><img width="200px" height="57px" src="assets/images/Logotipo-OjoCiudadanoBlanco.png" alt="LogotipoOjoCiudadano"></a>
+            <ul class="menu-horizontal">
+                <li><a>Conócenos ▼</a>
+                    <ul class="menu-vertical">
+                        <li><a>Sobre nosotros</a></li>
+                        <li><a href="PantQueEs.html">¿Que es OjoCiudadano?</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://elpais.com/noticias/obras-publicas/">Noticias</a></li>
+                <li><a href="index.html#Menj-Formu">Ayuda</a></li>
+            </ul>
+            <div class="buscador">
+                <input type="text" placeholder="Buscar">
+                <div class="Ico-lupa">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="Btn-IniciarSesion">
+                <button class="Btn-IconoMensaje">
+                    <span>Iniciar Sesión</span>
+                    <i class="far fa-user"></i>
+                </button>
+                <ul class="menu-vertical">
+                    <li><a>Ver perfil</a></li>
+                    <li><a>Carrar sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="Reportes">
+        <div class="text">
+            <h1>¡¡¡Reporta alguna irregularidad de la obra!!!</h1>
+            <p>Utiliza este formulario para compartir información actualizada sobre el estado de la obra o reportar cualquier incidente. Tu participación es clave para garantizar la transparencia y el buen manejo de los recursos en los proyectos públicos. Asegúrate de incluir todos los detalles relevantes para que el seguimiento sea preciso y efectivo. Podrás ver el estado de tu reporte en tu perfil si tienes una cuenta creada con nosotros.</p>
+        </div>
+    </section>
+
+    <!--______________________________________FORMULARIO______________________________________-->
+    <section class="Formulario-OjoCiudadano">
+        <div class="Formulario">
+            <form name="Formulario" method="get" action="">
+                <fieldset id="form">
+                    <legend>Envía tu reporte</legend>
+                    <div class="Items-Formulario">
+                        <div class="Formulario-DatosPersonales">
+                            <div class="Espacio-Formulario">
+                                <input type="text" name="fname" placeholder="Nombres*">
+                            </div>
+                            <div class="Apellidos">
+                                <div class="Espacio-Formulario">
+                                    <input type="text" name="fapepat" placeholder="Apellido Paterno*">
+                                </div>
+                                <div class="Espacio-Formulario">
+                                    <input type="text" name="fapemat" placeholder="Apellido Materno*">
+                                </div>
+                            </div>
+                            <div class="Espacio-Formulario">
+                                <input type="text" name="fdni" placeholder="DNI">
+                            </div>
+                            <div class="Espacio-Formulario">
+                                <input type="text" name="fphone" placeholder="Celular">
+                            </div>
+                            <div class="Espacio-Formulario">
+                                <input type="text" name="femail" placeholder="Correo Electrónico">
+                            </div>
+                        </div>
+                        <div class="Formulario-EscribeAqui">
+                            <div class="Espacio-Formulario">
+                                <textarea type="text" name="fmessage" placeholder="Escribe tu mensaje aqui*"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Formulario-AdjuntarFotos">
+                        <div class="Espacio-Formulario">
+                            <label for="fAdjuntar">Adjuntar fotos y/o videos</label>
+                            <input type="file" name="fAdjuntar" id="fAdjuntar" accept="video/*, image/*">
+                        </div>
+                    </div>
+                    <div class="Formulario-Checkbox">
+                        <input type="checkbox" name="fautorization">
+                        <label>Autorizo el tratamiento de mis datos personales.</label>
+                    </div>
+                    <input type="submit" name="fbuttonsend" value="Enviar">
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <!--______________________________________PIE DE PAGINA______________________________________-->
+    <footer class="piepagina">
+        <div class="Contenedor-piepagina">
+            <div class="Opciones">
+                <h1>Sobre OjoCiudadano</h1>
+                <a href="PantQueEs.html"><p>¿Qué es OjoCiudadano?</p></a>
+                <a href="https://www.gob.pe/institucion/pcm/informes-publicaciones/698037-politica-de-privacidad-de-gob-pe"><p>Politica de privacidad para el manejo de datos de OjoCiudadano</p></a>
+                <a href="https://reclamos.servicios.gob.pe/?institution_id=108"><p>Libro de reclamaciones</p></a>
+                <a href="https://www.whatsapp.com/?lang=es_LA"><p>Centro de ayuda</p></a>
+            </div>
+            <div class="RedesSociales">
+                <div class="Siguenos">
+                    <p>Siguenos:</p>
+                    <div class="Icons-RedesSociales">
+                        <a href="https://www.facebook.com/"><img height="35px" src="assets/images/Icono-Facebook.png" class="Icon" alt="IconoFacebook"></a>
+                        <a href="https://x.com/"><img height="35px" src="assets/images/Icono-X.png" class="IconX" alt="IconoX"></a>
+                        <a href="https://www.youtube.com/"><img height="35px" src="assets/images/Icono-YouTube.png" class="Icon" alt="IconoYouTube"></a>
+                        <a href="https://www.instagram.com/"><img height="35px" src="assets/images/Icono-Instagram.png" class="Icon" alt="IconoInstagram"></a>
+                        <a href="https://www.linkedin.com/"><img height="35px" src="assets/images/Icono-Linkedin.png" class="Icon" alt="IconoLinkedin"></a>
+                    </div>
+                </div>
+                <div class="App">
+                    <p>Instala nuestra app:</p>
+                    <div class="Icons-AppStores">
+                        <a href="https://play.google.com/"><img height="35px" src="assets/images/Icono-GooglePlay.png" alt="IconoGooglePlay"></a>
+                        <a href="https://www.apple.com/la/app-store/"><img height="35px" src="assets/images/Icono-AppStore.png" alt="IconoAppStore"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="assets/scripts/main.js"></script>
+</html>
