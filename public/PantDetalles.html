@@ -58,3 +58,61 @@
             </div>
         </div>
     </nav>
+
+    <section class="Reportes">
+        <div class="text">
+            <h1>Reporta alguna irregularidad de la obra !!!</h1>
+            <p>Utiliza este formulario para compartir información actualizada sobre el estado de la obra o reportar cualquier incidente. Tu participación es clave para garantizar la transparencia y el buen manejo de los recursos en los proyectos públicos. Asegúrate de incluir todos los detalles relevantes para que el seguimiento sea preciso y efectivo. Podrás ver el estado de tu reporte en tu perfil si tienes una cuenta creada con nosotros.</p>
+        </div>
+    </section>
+
+    <!--______________________________________FORMULARIO______________________________________-->
+    <section class="Formulario-OjoCiudadano">
+        <div class="Formulario">
+            <form name="Formulario" method="get" action="">
+                <fieldset id="form">
+                    <legend>Envía tu reporte</legend>
+                    <div class="Items-Formulario">
+                        <div class="Formulario-DatosPersonales">
+                            <div class="Espacio-Formulario">
+                                <input type="text" name="fname" placeholder="Nombres*">
+                            </div>
+                            <div class="Apellidos">
+                                <div class="Espacio-Formulario">
+                                    <input type="text" name="fapepat" placeholder="Apellido Paterno*">
+                                </div>
+                                <div class="Espacio-Formulario">
+                                    <input type="text" name="fapemat" placeholder="Apellido Materno*">
+                                </div>
+                            </div>
+                            <div class="Espacio-Formulario">
+                                <input type="tel" placeholder="DNI">
+                            </div>
+                            <div class="Espacio-Formulario">
+                                <input type="tel" name="fphone" placeholder="Celular">
+                            </div>
+                            <div class="Espacio-Formulario">
+                                <input type="email" placeholder="Correo Electrónico">
+                            </div>
+                        </div>
+                        <div class="Formulario-EscribeAqui">
+                            <div class="Espacio-Formulario">
+                                <textarea type="text" name="fmessage" placeholder="Escribe tu mensaje aqui*"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Formulario-AdjuntarFotos">
+                        <div class="Espacio-Formulario">
+                            <label for="fAdjuntar">Adjuntar fotos y/o videos</label>
+                            <input type="file" name="fAdjuntar" id="fAdjuntar" accept="video/*, image/*">
+                        </div>
+                    </div>
+                    <div class="Formulario-Checkbox">
+                        <input type="checkbox" name="fautorization">
+                        <label>Autorizo el tratamiento de mis datos personales.</label>
+                    </div>
+                    <input type="submit" name="fbuttonsend" value="Enviar">
+                </fieldset>
+            </form>
+        </div>
+    </section>
