@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>OjoCiudadano-PantallaReporte-PortalTech</title>
+    <title>OjoCiudadano-Reporta la obra</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,16 +31,21 @@
     <nav class="topheader">
         <div class="topheader-container">
             <a href="index.html"><img width="200px" height="57px" src="assets/images/Logotipo-OjoCiudadanoBlanco.png" alt="LogotipoOjoCiudadano"></a>
-            <ul class="menu-horizontal">
-                <li><a>Conócenos ▼</a>
-                    <ul class="menu-vertical">
-                        <li><a>Sobre nosotros</a></li>
-                        <li><a href="PantQueEs.html">¿Que es OjoCiudadano?</a></li>
-                    </ul>
-                </li>
-                <li><a href="https://elpais.com/noticias/obras-publicas/">Noticias</a></li>
-                <li><a href="index.html#Menj-Formu">Ayuda</a></li>
-            </ul>
+            <nav class="Contenedor-menu-horizontal" id="Contenedor-menu-horizontal">
+                <button class="close-menu" id="close-menu">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu-horizontal" id="menu-horizontal">
+                    <li><a class="opcion" id="opcion">Conócenos ▼</a>
+                        <ul class="menu-vertical">
+                            <li><a href="PantSobreNosotros.html">Sobre nosotros</a></li>
+                            <li><a href="PantQueEs.html">¿Qué es OjoCiudadano?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://elpais.com/noticias/obras-publicas/">Noticias</a></li>
+                    <li><a href="index.html#Menj-Formu">Ayuda</a></li>
+                </ul>
+            </nav>
             <div class="buscador">
                 <input type="text" placeholder="Buscar">
                 <div class="Ico-lupa">
@@ -48,15 +53,18 @@
                 </div>
             </div>
             <div class="Btn-IniciarSesion">
-                <button class="Btn-IconoMensaje">
+                <a href="PantIniciarSesion.html"><button class="Btn-IconoMensaje">
                     <span>Iniciar Sesión</span>
                     <i class="far fa-user"></i>
-                </button>
+                </button></a>
                 <ul class="menu-vertical">
-                    <li><a>Ver perfil</a></li>
-                    <li><a>Carrar sesión</a></li>
+                    <li><a href="PantPerfiles.html">Ver perfil</a></li>
+                    <li><a>Cerrar sesión</a></li>
                 </ul>
             </div>
+            <button class="open-menu" id="open-menu">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
 
@@ -123,26 +131,26 @@
             <div class="Opciones">
                 <h1>Sobre OjoCiudadano</h1>
                 <a href="PantQueEs.html"><p>¿Qué es OjoCiudadano?</p></a>
-                <a href="https://www.gob.pe/institucion/pcm/informes-publicaciones/698037-politica-de-privacidad-de-gob-pe"><p>Politica de privacidad para el manejo de datos de OjoCiudadano</p></a>
-                <a href="https://reclamos.servicios.gob.pe/?institution_id=108"><p>Libro de reclamaciones</p></a>
-                <a href="https://www.whatsapp.com/?lang=es_LA"><p>Centro de ayuda</p></a>
+                <a href="https://www.gob.pe/institucion/pcm/informes-publicaciones/698037-politica-de-privacidad-de-gob-pe" target="_blank"><p>Politica de privacidad para el manejo de datos de OjoCiudadano</p></a>
+                <a href="https://reclamos.servicios.gob.pe/?institution_id=108" target="_blank"><p>Libro de reclamaciones</p></a>
+                <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><p>Centro de ayuda</p></a>
             </div>
             <div class="RedesSociales">
                 <div class="Siguenos">
                     <p>Siguenos:</p>
                     <div class="Icons-RedesSociales">
-                        <a href="https://www.facebook.com/"><img height="35px" src="assets/images/Icono-Facebook.png" class="Icon" alt="IconoFacebook"></a>
-                        <a href="https://x.com/"><img height="35px" src="assets/images/Icono-X.png" class="IconX" alt="IconoX"></a>
-                        <a href="https://www.youtube.com/"><img height="35px" src="assets/images/Icono-YouTube.png" class="Icon" alt="IconoYouTube"></a>
-                        <a href="https://www.instagram.com/"><img height="35px" src="assets/images/Icono-Instagram.png" class="Icon" alt="IconoInstagram"></a>
-                        <a href="https://www.linkedin.com/"><img height="35px" src="assets/images/Icono-Linkedin.png" class="Icon" alt="IconoLinkedin"></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img height="35px" src="assets/images/Icono-Facebook.png" class="Icon" alt="IconoFacebook"></a>
+                        <a href="https://x.com/" target="_blank"><img height="35px" src="assets/images/Icono-X.png" class="IconX" alt="IconoX"></a>
+                        <a href="https://www.youtube.com/" target="_blank"><img height="35px" src="assets/images/Icono-YouTube.png" class="Icon" alt="IconoYouTube"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img height="35px" src="assets/images/Icono-Instagram.png" class="Icon" alt="IconoInstagram"></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><img height="35px" src="assets/images/Icono-Linkedin.png" class="Icon" alt="IconoLinkedin"></a>
                     </div>
                 </div>
                 <div class="App">
                     <p>Instala nuestra app:</p>
                     <div class="Icons-AppStores">
-                        <a href="https://play.google.com/"><img height="35px" src="assets/images/Icono-GooglePlay.png" alt="IconoGooglePlay"></a>
-                        <a href="https://www.apple.com/la/app-store/"><img height="35px" src="assets/images/Icono-AppStore.png" alt="IconoAppStore"></a>
+                        <a href="https://play.google.com/" target="_blank"><img height="35px" src="assets/images/Icono-GooglePlay.png" alt="IconoGooglePlay"></a>
+                        <a href="https://www.apple.com/la/app-store/" target="_blank"><img height="35px" src="assets/images/Icono-AppStore.png" alt="IconoAppStore"></a>
                     </div>
                 </div>
             </div>

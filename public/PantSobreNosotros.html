@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Bienvenido a OjoCiudadano</title>
+    <title>OjoCiudadano-Sobre Nosotros</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,10 +24,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
     <link rel="icon" href="favicon.ico"/>
-    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link rel="stylesheet" href="assets/styles/StylesPantSobreNosotros.css" />
 </head>
 <body>
-    <!--______________________________________ENCABEZADO______________________________________-->
+    <!--___________________________________________________TOPHEADER___________________________________________________-->
     <nav class="topheader">
         <div class="topheader-container">
             <a href="index.html"><img width="200px" height="57px" src="assets/images/Logotipo-OjoCiudadanoBlanco.png" alt="LogotipoOjoCiudadano"></a>
@@ -43,9 +43,15 @@
                         </ul>
                     </li>
                     <li><a href="https://elpais.com/noticias/obras-publicas/">Noticias</a></li>
-                    <li><a href="#Menj-Formu">Ayuda</a></li>
+                    <li><a href="index.html#Menj-Formu">Ayuda</a></li>
                 </ul>
             </nav>
+            <div class="buscador">
+                <input type="text" placeholder="Buscar">
+                <div class="Ico-lupa">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
             <div class="Btn-IniciarSesion">
                 <a href="PantIniciarSesion.html"><button class="Btn-IconoMensaje">
                     <span>Iniciar Sesión</span>
@@ -61,81 +67,23 @@
             </button>
         </div>
     </nav>
-    <!--______________________________________SECCIONES______________________________________-->
-    <section class="PrimeraSeccion">
-        <div class="presentacion">
-            <h1>¡Bienvenido a OjoCiudadano!</h1>
-            <p>Esta es una plataforma digital diseñada para facilitar el acceso a la información referente sobre los proyectos que se están realizando en el Perú, como por ejemplo conocer el avance, presupuesto y cronograma.</p>
-            <div class="buscador">
-                <input type="text" placeholder="¿Qué buscaremos hoy?">
-                <botton class="Btn-Lupa">
-                    <i class="fas fa-search"></i>
-                </botton>
+    <!--___________________________________________________¿Que es OjoCiudadano?___________________________________________________-->
+    <section class="GobiernosRegionales">
+        <div class="GobReg-container">
+            <h1>Sobre Nosotros</h1>
+            <p>PortalTech es un startup liderado por estudiantes de la Universidad Peruana de Ciencias Aplicadas (UPC), pertenecientes a la Facultad de Ingeniería. Esta empresa está orientada en diseñar innovadoras herramientas tecnológicas para ayudar a los ciudadanos peruanos a hacer seguimiento a la gestión del estado, es por ello que nos enorgullecemos en presentar OjoCiudadano, una plataforma virtual en donde podrán hacer seguimiento al progreso de las obras publicas. Esto permitirá a los ciudadanos denunciar posibles irregularidades.</p>
+        </div>
+        <div class="MisionVision-container">
+            <div class="Container">
+                <h2>Misión</h2>
+                <p>Facilitar plataformas digitales de libre acceso a información del estado para ciudadanos que deseen realizar seguimiento o vigilancia para prevenir irregularidades.</p>
+            </div>
+            <div class="Container">
+                <h2>Visión</h2>
+                <p>Ser reconocidos como una empresa líder en el desarrollo de plataformas digitales que faciliten la participación ciudadana en el control y seguimiento de la gestión pública, donde cada ciudadano tenga un rol activo en la construcción de un país más justo y desarrollado.</p>
             </div>
         </div>
-    </section>
-
-    <section class="SegundaSeccion">
-        <div class="info-contenedor">
-            <h1>Estado peruano</h1>
-            <p>El Estado peruano es responsable de la planificación, ejecución y supervisión de obras públicas para mejorar la infraestructura del país. Su gestión busca garantizar el desarrollo económico y social, aunque enfrenta desafíos en transparencia y eficiencia en la ejecución de proyectos. La participación ciudadana es clave para asegurar un adecuado seguimiento de estas iniciativas.</p>
-        </div>
-        <div class="info-contenedor2">
-            <h1>Gobiernos regionales</h1>
-            <p>Se encargan de administrar los departamentos del Perú.  Entre sus funciones podemos encontrar que son los encargados de permitir a las municipalidades ejecutar proyectos de infraestructura y desarrollo local.</p>
-            <div class="Btn-obras"><a href="PantGobReg.html"><input type="button" class="btn-verobras" value="Ver obras"></a></div>
-        </div>
-    </section>
-
-    <section class="TerceraSeccion" id="Menj-Formu">
-        <div class="mensaje">
-            <p>¡Se parte del cambio y únete a esta hermosa familia!</p>
-        </div>
-    </section>
-
-    <!--______________________________________FORMULARIO______________________________________-->
-    <section class="Formulario-OjoCiudadano">
-        <div class="Formulario">
-            <form name="Formulario" method="get" action="">
-                <fieldset id="form">
-                    <legend>Contáctanos</legend>
-                    <div class="Items-Formulario">
-                        <div class="Formulario-DatosPersonales">
-                            <div class="Espacio-Formulario">
-                                <input type="text" name="fname" placeholder="Nombres*">
-                            </div>
-                            <div class="Apellidos">
-                                <div class="Espacio-Formulario">
-                                <input type="text" name="fapepat" placeholder="Apellido Paterno*">
-                            </div>
-                            <div class="Espacio-Formulario">
-                                <input type="text" name="fapemat" placeholder="Apellido Materno*">
-                            </div>
-                            </div>
-                            <div class="Espacio-Formulario">
-                                <input type="text" name="fdni" placeholder="DNI">
-                            </div>
-                            <div class="Espacio-Formulario">
-                                <input type="text" name="fphone" placeholder="Celular">
-                            </div>
-                            <div class="Espacio-Formulario">
-                                <input type="text" name="femail" placeholder="Correo Electrónico">
-                            </div>
-                        </div>
-                        <div class="Formulario-EscribeAqui">
-                            <div class="Espacio-Formulario">
-                                <textarea type="text" name="fmessage" placeholder="Escribe tu mensaje aqui*"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="Formulario-Checkbox">
-                        <input type="checkbox" name="fautorization">
-                        <label>Autorizo el tratamiento de mis datos personales.</label>
-                    </div>
-                    <input type="submit" class="fbuttonsend" value="Enviar">
-                </fieldset>
-            </form>
-        </div>
+        <img src="assets/images/Imagen-SobreNosotros.jpg" alt="Construcción en progreso">
     </section>
     <!--______________________________________PIE DE PAGINA______________________________________-->
     <footer class="piepagina">
