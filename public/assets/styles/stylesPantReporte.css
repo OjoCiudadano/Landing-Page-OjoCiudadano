@@ -172,7 +172,6 @@ body {
     font-size: 28px;
     color: #8c8c8c;
 }
-
 /*______________________________________________________________DENUNCIAS______________________________________________________________*/
 .Reportes {
     align-items: center;
@@ -443,4 +442,211 @@ form input[type="file"] {
 
 .RedesSociales img:hover{
     cursor: pointer;
+}
+
+/*_________________________________________________RESPONSIVE_________________________________________________*/
+.open-menu {
+    border: none;
+    background-color: #FF0000;
+    display: none;
+    margin-left: 20px;
+}
+
+.open-menu i{
+    font-family: "Font Awesome 5 Free";
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.close-menu {
+    border: none;
+    background-color: #cacaca;
+    display: none;
+    padding: 0%;
+    margin: -6px 22px 0px 0px;
+}
+
+.close-menu i{
+    font-family: "Font Awesome 5 Free";
+    font-size: 50px;
+    color: #000000;
+}
+
+/*_________________________________________________RESPONSIVE_________________________________________________*/
+/*CONFIGURACION RESPONSIVE*/
+@media (max-width: 768px) {
+        /*MENU*/
+    .open-menu, .close-menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    .Contenedor-menu-horizontal {
+        opacity: 0;
+        visibility: hidden;
+        width: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #cacaca;
+        padding: 2rem 46px 0rem 0rem;
+        box-shadow: 0 0 0 100vmax #0000006a;
+        transition: all .5s;
+        transform: translateX(100%);
+    }
+    
+    .Contenedor-menu-horizontal.visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0%);
+    }
+
+    .menu-horizontal{
+        display: block;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .menu-horizontal .menu-vertical{
+        display: block;
+        flex-direction: column;
+        align-items: end;
+
+        position: relative;
+        box-shadow: none;
+        margin: 0%;
+        padding: 0%;
+
+        color: #000000;
+        background-color: #8c8c8c;
+        border-right: 5px solid transparent;
+        border-radius: 0%;
+        width: 111.7%;
+
+        overflow: hidden;
+        height: 0;
+        transition: all .5s;
+        transform: translateX(0%);
+    }
+
+    .menu-horizontal li a{
+        display: block;
+        color: #000000;
+        border-right: 5px solid transparent;
+        border-radius: 0%;
+        width: 100%;
+    }
+
+    .menu-horizontal.activado .menu-vertical{
+        overflow: visible;
+        transform: translateX(100%);
+        height: auto;
+    }
+
+    .buscador{
+        display: flex;
+        width: 100%;
+        justify-content: right;
+    }
+
+    .Ico-lupa {
+        border-radius: 14px;
+        display: flex;
+    }
+
+    .buscador input[type=text]{
+        display: none;
+    }
+
+    .Btn-IconoMensaje {
+        width: auto;
+        padding: 20px;
+        border-radius: 100px;
+        margin: 0%;
+    }
+
+    .Btn-IniciarSesion {
+        padding-left: 0%;
+    }
+
+    .Btn-IniciarSesion span {
+        display: none;
+        padding: 0%;
+    }
+
+    .Btn-IniciarSesion .menu-vertical{
+        width: 185px;
+        margin-left: -120px;
+    }
+
+    .Btn-IniciarSesion .menu-vertical li a{
+        padding-right: 20px;
+        text-align: right;
+    }
+
+    .menu-horizontal li :hover {
+        border-right: 5px solid #FF0000;
+        border-radius: 0%;
+        background: #8C8C8C;
+        width: 100%;
+    }
+
+    .menu-horizontal .menu-vertical li a:hover{
+        background-color: #0033A0;
+        color: #ffffff;
+        width: 100%;
+        padding-right: 15px;
+    }
+
+    /* Título */
+    .text h1 {
+        font-size: 35px; /*Tamaño normal 40*/
+    }
+
+    /* Párrafo */
+    .text p {
+        font-size: 19px; /*Tamaño normal 22*/
+        line-height: 24px;
+    }
+
+
+    .Formulario {
+        width: auto;
+        height: auto;
+    }
+
+    .Items-Formulario {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form textarea[name="fmessage"] {
+        margin-left: 0px;
+    }
+
+    form input[type="submit"] {
+        align-content: center;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .Espacio-Formulario label {
+        align-content: center;
+        width: 97%;
+        margin-bottom: 5px;
+    }
+
+    .Opciones {
+        width: 45%;
+    }
+
+    .RedesSociales {
+        width: 35%;
+    }
 }

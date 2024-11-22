@@ -1,3 +1,35 @@
+//MENU DESPLEGABLE LATERAL
+const nav = document.querySelector("#Contenedor-menu-horizontal");
+const abrir = document.querySelector("#open-menu");
+const cerrar = document.querySelector("#close-menu");
+
+abrir.addEventListener("click", () => {
+    nav.classList.add("visible");
+});
+
+cerrar.addEventListener("click", () => {
+    nav.classList.remove("visible");
+});
+
+//MENU DESPLEGABLE VERTICAL DE CONTACTANOS
+const subMenuBtn = document.querySelectorAll(".opcion");
+for (let i = 0; i < subMenuBtn.length; i++) {
+    subMenuBtn[i].addEventListener("click", function() {
+        if (window.innerWidth < 768) {
+            const subMenu = this.nextElementSibling;
+            const height = subMenu.scrollHeight;
+
+            if (subMenu.classList.contains("activado")) {
+                subMenu.classList.remove("activado");
+                subMenu.removeAttribute("style");
+            } else {
+                subMenu.classList.add("activado");
+                subMenu.style.height = height + "px";
+            }
+        }
+    });
+}
+
 //VALIDACION DE FORMULARIO
 const form = document.querySelector('form[name="Formulario"]');
 form.addEventListener("submit", (event) => {
